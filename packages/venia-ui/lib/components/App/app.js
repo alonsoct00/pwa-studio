@@ -14,6 +14,8 @@ import Navigation from '../Navigation';
 import Routes from '../Routes';
 import ToastContainer from '../ToastContainer';
 import Icon from '../Icon';
+import ProductCard from "../ProductCard";
+import products from './productsData';
 
 import {
     AlertCircle as AlertCircleIcon,
@@ -93,28 +95,17 @@ const App = props => {
     if (renderError) {
         return (
             <HeadProvider>
-                <StoreTitle />
-                <Main isMasked={true} />
-                <Mask isActive={true} />
-                <ToastContainer />
+
             </HeadProvider>
         );
     }
 
     return (
-        <HeadProvider>
-            <StoreTitle />
-            <Main isMasked={hasOverlay}>
-                <Routes />
-            </Main>
-            <Mask
-                isActive={hasOverlay}
-                dismiss={handleCloseDrawer}
-                data-cy="App-Mask-button"
-            />
-            <Navigation />
-            <ToastContainer />
-        </HeadProvider>
+        <div className="product-list">
+            {products.map((product, index) => (
+                <ProductCard key={index} {...product} />
+            ))}
+        </div>
     );
 };
 

@@ -1,0 +1,78 @@
+.product-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-details {
+    margin-top: 8px;
+  }
+
+  .badges .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  .badge.choice {
+    background-color: #ff3c00;
+  }
+
+  .badge.amazon {
+    background-color: #ff9900;
+  }
+
+  .badge.walmart {
+    background-color: #0071ce;
+  }
+
+  .badge.ebay {
+    background-color: #e5b532;
+  }
+
+  .badge.home_depot {
+    background-color: #ff6600;
+  }
+
+  .badge.new {
+    background-color: #00aaff;
+  }
+
+  .badge.discount {
+    background-color: #ff5050;
+  }
+
+  .rating {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  .description {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  .prices {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .msrp-price.line-through {
+    text-decoration: line-through;
+  }
+
+  .promotion-price {
+    color: #ff5050;
+    margin-right: 8px;
+  }
